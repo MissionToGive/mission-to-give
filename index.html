@@ -3,97 +3,101 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MissionToGive Challenge - Make a Difference</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Mystery Box Challenge - MissionToGive</title>
     <style>
         body {
             font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
-            text-align: center;
         }
         .container {
-            width: 90%;
             max-width: 800px;
-            margin: auto;
+            margin: 50px auto;
             padding: 20px;
             background: white;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            margin-top: 30px;
         }
         h1 {
-            color: #27ae60;
+            color: #ff6600;
         }
-        .donation-btn {
+        .mystery-box {
+            width: 150px;
+            height: 150px;
+            background: url('https://via.placeholder.com/150') no-repeat center;
+            background-size: cover;
             display: inline-block;
-            padding: 12px 25px;
-            background: #27ae60;
-            color: white;
-            text-decoration: none;
+            margin: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 15px 30px;
             font-size: 18px;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .donation-btn:hover {
-            background: #219150;
-        }
-        .progress-bar {
-            width: 100%;
-            background: #ddd;
-            height: 30px;
-            border-radius: 5px;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-        .progress {
-            width: 60%; /* Update dynamically */
-            height: 100%;
-            background: #27ae60;
-            text-align: center;
+            background: #ff6600;
             color: white;
-            line-height: 30px;
-            font-weight: bold;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
         }
-        .impact-section {
-            margin-top: 30px;
+        .btn:hover {
+            background: #e65c00;
         }
-        .impact-item {
-            background: #f9f9f9;
+        .prizes {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .prizes div {
+            background: #ffeeba;
             padding: 15px;
-            margin: 10px;
             border-radius: 5px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
-        footer {
-            margin-top: 30px;
-            padding: 20px;
-            background: #333;
-            color: white;
+        .prizes img {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Join the MissionToGive Challenge!</h1>
-        <p>Take the challenge! Donate and invite 3 friends to do the same. Let's make a difference together!</p>
-        <a href="https://www.paymentgateway.com/donate" class="donation-btn">Take the Challenge</a>
-
-        <div class="progress-bar">
-            <div class="progress" style="width: 70%;">70% Funded</div>
+        <h1>🎁 Mystery Box Challenge 🎁</h1>
+        <p>Donate & Win a Mystery Prize! What’s inside? You won’t know until you donate!</p>
+        
+        <div class="mystery-box"></div>
+        
+        <h2>How It Works</h2>
+        <p>1️⃣ Donate any amount to MissionToGive.<br>2️⃣ Get entered into the Mystery Box Challenge.<br>3️⃣ Receive a surprise prize - It could be anything!</p>
+        
+        <a href="#" class="btn">Donate Now</a>
+        
+        <h2>What Can You Win?</h2>
+        <div class="prizes">
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Chocolate Bar">
+                🎁 A delicious chocolate bar 🍫
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Amazon Voucher">
+                🎁 A surprise Amazon voucher
+            </div>
+            <div>
+                <img src="https://via.placeholder.com/80" alt="Thank You Note">
+                🎁 A heartfelt thank-you note
+            </div>
         </div>
-
-        <div class="impact-section">
-            <h2>Your Impact</h2>
-            <div class="impact-item">₹500 - Provides food for a family</div>
-            <div class="impact-item">₹1000 - Covers school supplies for a child</div>
-            <div class="impact-item">₹5000 - Funds medical aid for an elderly person</div>
-        </div>
+        
+        <h2>Spread the Word!</h2>
+        <p>Tag your friends & share your mystery prize with #MysteryBoxChallenge</p>
+        
+        <p>Follow us on: <a href="#">Instagram</a> | <a href="#">Twitter</a> | <a href="#">Facebook</a></p>
     </div>
-
-    <footer>
-        <p>Join the movement! Share with friends and help us reach our goal.</p>
-        <p>Follow us: <i class="fab fa-facebook"></i> <i class="fab fa-twitter"></i> <i class="fab fa-instagram"></i></p>
-    </footer>
 </body>
 </html>
